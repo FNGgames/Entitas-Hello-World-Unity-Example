@@ -1,5 +1,6 @@
 # Entitas-Hello-World-Unity-Example
-Unity project files to accompany the Hello-World tutorial on the entitas wiki.
+Unity project files to accompany the Hello-World tutorial on the [Entitas-CSharp wiki](https://github.com/sschmid/Entitas-CSharp/wiki).
+
 # Introduction
 
 This tutorial will teach how to create a simple "Hello World!" program in Unity with Entitas. The aim is to familiarize you with the different pieces that make up an Entitas program, how they interact with eachother and how to structure your code for an Entitas project. This should help you get more out of the various [Example Projects](https://github.com/sschmid/Entitas-CSharp/wiki/Example-projects). 
