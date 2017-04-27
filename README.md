@@ -1,6 +1,3 @@
-# Entitas-Hello-World-Unity-Example
-Unity project files to accompany the Hello-World tutorial on the [Entitas-CSharp wiki](https://github.com/sschmid/Entitas-CSharp/wiki).
-
 # Introduction
 
 This tutorial will teach how to create a simple "Hello World!" program in Unity with Entitas. The aim is to familiarize you with the different pieces that make up an Entitas program, how they interact with eachother and how to structure your code for an Entitas project. This should help you get more out of the various [Example Projects](https://github.com/sschmid/Entitas-CSharp/wiki/Example-projects). 
@@ -12,13 +9,17 @@ The finished unity project can be downloaded from github [here](https://github.c
 
 # Step 1 - Install Entitas
 
-Create a new Unity Project. Download [**Entitas-Unity.zip**](https://github.com/sschmid/Entitas-CSharp/blob/master/Build/deploy/Entitas-Unity.zip?raw=true). Unzip and move the folders "Entitas" and "Addons" to the assets folder of your unity project. Feel free to drop them in a sub folder to keep your project organised. Now create a folder for your game's source code (e.g. "Source"). Create a folder called "Generated" inside there.
+1. Create a new Unity Project.
+2. Download [**Entitas-Unity.zip**](https://github.com/sschmid/Entitas-CSharp/blob/master/Build/deploy/Entitas-Unity.zip?raw=true). 
+3. Unzip and move the `Entitas` folder into your project's Assets folder. Feel free to drop them in a sub folder to keep your project organised. 
+4. Create a folder for your game's source code (e.g. "Source").
+5. Create a folder called "Generated" inside the folder you just created.
 
 # Step 2 - Generate Contexts
 
 Before you create any components or systems you must point Entitas to the folder you where you want your generated code to go. Open the menu Entitas->Preferences and browse to the folder we just created for Generated code. 
 
-It's also time to define our contexts. In this example we will only use the Game context, but it is okay to keep the default GameState and Input contexts as they are. Click Generate. You should now have some new folders and files in your generated folder and a message in the console letting you know what's been done. Now we have what we need to start writing components.
+It's also time to define our contexts. In this example we will only use the Game context, but it is okay to keep the default GameState and Input contexts as they are. set Data Providers, Code Generators, and Post Processors to "Everything". Click Generate. You should now have some new folders and files in your generated folder and a message in the console letting you know what's been done. Now we have what we need to start writing components.
 
 ![Folder Structure](http://i.imgur.com/ltUYXcU.png)
 
@@ -26,7 +27,7 @@ It's also time to define our contexts. In this example we will only use the Game
 
 # Step 3 - Create your first component
 
-For this example we will only need one component. It's going to store the message we want to print to the console. Let's create create a new folder inside "Source" called "Components". Create a new C# script called DebugComponent and clear the code Unity has generated for you.
+For this example we will only need one component. It's going to store the message we want to print to the console. Let's create create a new folder inside "Source" called "Components". Create a new C# script called DebugMessageComponent and clear the code Unity has generated for you.
 
 **DebugMessageComponent.cs**
 ```csharp
@@ -288,7 +289,6 @@ You might also notice that there is now 1 "reusable" entity listed on the game o
 # Next Steps
 
 Now might be a good time to go back to the [MatchOne](https://github.com/sschmid/Match-One) example project. You should find it much easier to inspect the code in the project to determine how the effects you see on screen are achieved.
-
 
 
 
